@@ -1,0 +1,7 @@
+{
+  "ignore" : [
+    "./src/assets/scripts/*.min.js"
+  ],
+  "sourceMaps" : "inline",
+  "presets": ["es2015"]
+}

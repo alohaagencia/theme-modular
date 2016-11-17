@@ -1,0 +1,81 @@
+//
+// _core/_typography
+//
+// 1. Family
+// 2. Transforms
+// 3. Size
+// 4. Weight
+// 5. Font
+// ============================================================================
+
+//
+// 1. Family
+// ----------------------------------------------------------------------------
+family($family = $font-primary)
+  font-family $family
+
+//
+// 2. Transforms
+// ----------------------------------------------------------------------------
+text-transform($transform)
+  text-transform $transform
+
+// Uppercase
+// ----------------------------------------------------------------------------
+$uppercase()
+  font-transform(uppercase)
+
+// Lowercase
+// ----------------------------------------------------------------------------
+$lowercase()
+  font-transform(lowercase)
+
+// Capitalize
+// ----------------------------------------------------------------------------
+$capitalize()
+  font-transform(capitalize)
+
+// First Letter
+// ----------------------------------------------------------------------------
+$firstletter-capitalize()
+  $lowercase()
+
+  &:first-letter
+    $uppercase()
+
+//
+// 3. Size
+// ----------------------------------------------------------------------------
+text-size($size = $font-size)
+  font-size $size
+
+  if ($value is inherit || unit($size) == 'rem')
+    // Nope
+  else
+    font-size rem($size)
+
+//
+// 3. Weight
+// ----------------------------------------------------------------------------
+weight($weight)
+  if ($weight == 'thin')
+    font-weight 100
+
+  if ($weight == 'regular')
+    font-weight 400
+
+  if ($weight == 'bold')
+    font-weight 700
+
+  if ($weight == 'bolder')
+    font-weight 900
+
+//
+// 5. Font
+// ----------------------------------------------------------------------------
+font($size = $font-size, $family = $font-primary, $color = $font-color, $weight = 400, $transform = false)
+  color $color
+  font $weight rem($size)/1 $family
+
+  if ($transform)
+    text-transform($transform)

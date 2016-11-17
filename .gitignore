@@ -1,0 +1,10 @@
+dist
+vendor
+node_modules
+src/.temp
+src/assets/styles
+src/assets/components
+src/assets/scripts/*.min.js
+*.sublime-project
+*.sublime-workspace
+.ideia

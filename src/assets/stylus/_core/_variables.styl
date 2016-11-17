@@ -1,0 +1,101 @@
+//
+// _core/_variables
+//
+// 1. Colors
+// 2. Media Queries
+// 3. Typography
+// 4. Animations
+// ============================================================================
+
+//
+// 1. Colors
+// ----------------------------------------------------------------------------
+
+// Base colors
+// ----------------------------------------------------------------------------
+$color-black = #000
+$color-white = #fff
+
+// Grays colors
+// ----------------------------------------------------------------------------
+$color-gray-darker = #111
+$color-gray-dark = #444
+$color-gray = #525559
+$color-gray-light = #aaa
+$color-gray-lighter = #efefef
+$color-gray-white = #f0f0f2
+
+// Events colors
+// ----------------------------------------------------------------------------
+$color-red = #e74c3c
+$color-blue = #2980b9
+$color-green = #16a085
+$color-orange = #e67e22
+
+$color-lighten-red = lighten($color-red, 25%)
+$color-lighten-blue = lighten($color-blue, 25%)
+$color-lighten-green = lighten($color-green, 25%)
+$color-lighten-orange = lighten($color-orange, 25%)
+
+$color-darken-red = darken($color-red, 25%)
+$color-darken-blue = darken($color-blue, 25%)
+$color-darken-green = darken($color-green, 25%)
+$color-darken-orange = darken($color-orange, 25%)
+
+//
+// 2. Media Queries
+// ----------------------------------------------------------------------------
+$screen-xs = 520px  // Extra Small
+$screen-sm = 768px  // Small
+$screen-md = 960px  // Medium
+$screen-lg = 1200px // Large
+$screen-xlg = 1400px // Extra Large
+$screen-xxlg = 1900px // Well, is it
+
+$screen-height = '(min-height: 900px) and (min-width: $screen-md)'
+
+// Rupture
+// @stylint off
+rupture.mobile-cutoff = $screen-xs
+rupture.tablet-cutoff = $screen-md
+rupture.desktop-cutoff = $screen-lg
+rupture.hd-cutoff = $screen-xlg
+
+rupture.scale = 0 $screen-xs $screen-sm $screen-md $screen-lg $screen-xlg $screen-xxlg
+rupture.scale-names = '0' 'xs' 'sm' 'md' 'lg' 'xlg' 'hd'
+rupture.anti-overlap = -1px
+// @stylint on
+
+//
+// 3. Typography
+// ----------------------------------------------------------------------------
+
+// Family
+// ----------------------------------------------------------------------------
+$font-primary = 'Ubuntu'
+$font-brand = 'Lobster'
+$font-icon = 'FontAwesome'
+
+// Size
+// ----------------------------------------------------------------------------
+$font-size = 16px
+$font-size-small = 12px
+$font-size-large = 25px
+$font-size-title = 50px
+
+// Colors
+// ----------------------------------------------------------------------------
+$font-color = $color-gray-darker
+$font-color-inverse = $color-gray-lighter
+$font-color-link = $color-blue
+$font-color-link-hover = $color-red
+$font-color-link-visited = $color-darken-blue
+$font-color-link-active = $color-lighten-blue
+$font-color-disable = $color-gray-light
+
+//
+// 4. Animations
+// ----------------------------------------------------------------------------
+$animation-smooth = all .4s ease-in-out
+$animation-long = all 1s ease-in-out
+$animation-short = all .1s

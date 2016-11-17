@@ -1,0 +1,40 @@
+{
+  "name": "modular",
+  "version": "0.1.0",
+  "scripts": {
+    "standard": "standard './src/assets/scripts/**/*.js' | snazzy",
+    "pa11y": "pa11y -e ~/phantomjs/bin/phantomjs -r html localhost:3000 > ./src/reporter.html",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "devDependencies": {
+    "bower-files": "^3.13.1",
+    "browser-sync": "^2.13.0",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-ssh": "^0.6.0",
+    "gulp-stylus": "^2.4.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-zip": "^3.2.0",
+    "mocha": "^2.5.3",
+    "pa11y": "^4.0.0",
+    "rsyncwrapper": "^1.0.1",
+    "snazzy": "^4.0.0",
+    "standard": "^7.1.2",
+    "watch": "^0.19.1"
+  },
+  "dependencies": {
+    "kouto-swiss": "^0.12.0",
+    "rupture": "^0.6.1"
+  },
+  "standard": {
+    "ignore": "**/*.min.js"
+  }
+}

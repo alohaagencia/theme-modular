@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#4a82bb">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <title>Modular</title>
+
+  <base href="/">
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="assets/styles/vendor.min.css">
+  <link rel="stylesheet" href="assets/styles/main.min.css">
+
+  <link rel="import" href="assets/components/aloha-menu/aloha-menu.html">
+</head>
+<body>
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+      your experience.
+    </p>
+  <![endif]-->
+
+  <header class="main-header">
+    <div class="header-superior hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#"><span class="fa fa-mobile"></span> <small>44</small> 9999-99999</a>
+          </div><!-- /.col-sm-6 -->
+          <div class="col-sm-6 text-right">
+            <a href="mailto:email@email.com"><span class="fa fa-envelope"></span> email@email.com</a>
+          </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.content -->
+    </div><!-- /.superior-header -->
+
+    <nav class="nav navbar-default">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="Aloha Agência - Marketing Digital">
+        </a><!-- /.navbar-brand -->
+
+        <aloha-menu class="main-menu navbar-nav navbar-right" role="navigation">
+          <menu-link href="/" text="Home"></menu-link>
+          <menu-link href="about.html" text="Quem Somos"></menu-link>
+          <menu-link href="services.html" text="Nossos Serviços"></menu-link>
+          <menu-link href="blog.html" text="Notícias"></menu-link>
+          <menu-link href="contact.html" text="Contato"></menu-link>
+        </aloha-menu>
+      </div><!-- /.container -->
+    </nav><!-- /.nav navbar-default -->
+  </header>
+
+  <main class="main">
+
+    <div class="hero">
+      <div class="hero-controls">
+        <a href="#" class="prev"><span class="fa fa-chevron-left"></span></a>
+        <a href="#" class="next"><span class="fa fa-chevron-right"></span></a>
+      </div><!-- /.hero-controls -->
+
+      <div class="hero-carousel">
+        <figure class="hero-item" style="background-image: url('//wallpapers.wallhaven.cc/wallpapers/full/wallhaven-457434.jpg'); color: #fff">
+          <div class="container">
+            <figcaption class="hero-content">
+              <h2 class="hero-title">Hero</h2><!-- /.hero-title -->
+              <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptatibus aspernatur at harum ipsa, minus nam natus voluptate reiciendis labore.</p><!-- /.hero-text -->
+              <a href="#" class="hero-link btn btn-primary">Hero Link</a>
+            </figcaption>
+          </div><!-- /.container -->
+        </figure>
+       </div><!-- /.container -->
+    </div><!-- /.hero -->
+
+  </main>
+
+  <!-- /SCRIPTS -->
+  <script src="assets/scripts/main.min.js"></script>
+  <script src="assets/scripts/vendor.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

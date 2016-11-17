@@ -1,0 +1,131 @@
+//
+// _core/_helpers
+//
+// 1. Sizes
+// 2. Visibility
+// 3. Center
+// ============================================================================
+
+// 1. Sizes
+// ----------------------------------------------------------------------------
+
+// Remify pixels
+// ----------------------------------------------------------------------------
+rem($value)
+  if ($value is 'inherit')
+    return $value
+
+  $u = unit($value)
+
+  if ($u is 'px')
+    return unit($value/16, 'rem')
+  else
+    return unit($value, $u)
+
+// Percentify pixels
+// ----------------------------------------------------------------------------
+percent($value)
+  $u = unit($value)
+
+  if ($u is 'px')
+    return unit($value/12, '%')
+  else
+    return unit($value, $u)
+
+// Pixalate
+// ----------------------------------------------------------------------------
+pixalate($value)
+  $u = unit($value)
+
+  if ($u is '%')
+    return unit($value*10, 'px')
+  else
+    return unit($value, $u)
+
+//
+// 2. Visibility
+// ----------------------------------------------------------------------------
+
+// Hidden
+// ----------------------------------------------------------------------------
+hidden($arg)
+  if ($arg == font)
+    font-size 0
+
+  if ($arg == xs)
+    +below('xs')
+      // @stylint off
+      display none !important
+      // @stylint on
+
+  if ($arg == sm)
+    +below('sm')
+      // @stylint off
+      display none !important
+      // @stylint on
+
+  if ($arg == md)
+    +below('md')
+      // @stylint off
+      display none !important
+      // @stylint on
+
+  if ($arg == all)
+    +below('all')
+      // @stylint off
+      display none !important
+      font-size 0 !important
+      visibility hidden !important
+      // @stylint on
+
+// Visible Only and below
+// ----------------------------------------------------------------------------
+visible-only($arg)
+  if ($arg == xs)
+    +above('sm')
+      display none !important
+
+  if ($arg == sm)
+    display none !important
+
+    +above('sm')
+      display block !important
+
+  if ($arg == lg)
+    display none !important
+
+    +above('lg')
+      display block
+
+// FadeIn
+// ----------------------------------------------------------------------------
+fade-in()
+  opacity 1
+  visibility visible
+  transition $animation-smooth
+
+// fade-out
+// ----------------------------------------------------------------------------
+fade-out()
+  opacity 0
+  visibility hidden
+  transition $animation-smooth
+
+//
+// 3. Center
+// ----------------------------------------------------------------------------
+center($arg = '', $pos = absolute)
+  position $pos
+
+  if ($arg == 'vertical')
+    top 50%
+    transform translateY(-50%)
+
+  else if ($arg == 'horizontal')
+    left 50%
+    transform translateX(-50%)
+
+  else
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)

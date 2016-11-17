@@ -1,0 +1,63 @@
+//
+// molecules/_navigation
+// ============================================================================
+.navbar
+  &-default
+    border none
+    background-color $color-white
+
+// Componente menu
+// ----------------------------------------------------------------------------
+
+// Hamburger
+// ----------------------------------------------------------------------------
+.hamburger.aloha-menu
+  top 25px
+
+  border none
+  background-color transparent
+
+  .hamburger-bar,
+  .hamburger-bar::after,
+  .hamburger-bar::before
+    transition all .2s
+    background-color $color-secundary
+
+  &.menu-is-visible
+    outline none
+    background-color $color-secundary
+
+    .hamburger-bar,
+    .hamburger-bar::after,
+    .hamburger-bar::before
+      background-color $color-white
+
+// Menu
+// ----------------------------------------------------------------------------
+.menu
+  padding-left 0
+  background-color $color-primary !important
+
+  +above(1024px)
+    background-color transparent !important
+
+  .menu-item.menu-link
+    padding 5px 15px
+    border none
+
+    +above(1024px)
+      padding 0
+
+    a.menu-link
+      +above(1024px)
+        height 105px
+        display block
+        padding 0 25px
+
+        font-size 16px
+        line-height 100px
+        color $color-primary
+
+        &:hover
+          color $color-white
+          background-color $color-secundary

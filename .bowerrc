@@ -1,0 +1,6 @@
+{
+  "directory": "./src/assets/components",
+  "scripts": {
+    "postinstall": "gulp process"
+  }
+}
