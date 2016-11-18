@@ -2,6 +2,9 @@
   "name": "modular",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "OwlCarouselBower": "^1.3.4",
+    "aloha-menu": "^1.1.2",
+    "gmaps": "^0.4.24"
   }
 }

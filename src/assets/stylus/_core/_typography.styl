@@ -17,7 +17,7 @@ family($family = $font-primary)
 //
 // 2. Transforms
 // ----------------------------------------------------------------------------
-text-transform($transform)
+font-transform($transform)
   text-transform $transform
 
 // Uppercase
@@ -78,4 +78,4 @@ font($size = $font-size, $family = $font-primary, $color = $font-color, $weight 
   font $weight rem($size)/1 $family
 
   if ($transform)
-    text-transform($transform)
+    font-transform($transform)

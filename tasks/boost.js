@@ -14,7 +14,7 @@ module.exports = {
   },
 
   scripts: {
-    'src': ['./src/assets/scripts/*.js', '!./src/assets/scripts/*.min.js'],
+    'src': ['./src/assets/scripts/**/*.js', '!./src/assets/scripts/**/*.min.js'],
     'watch': './src/assets/scripts',
     'dist': './src/assets/scripts',
     'min': './src/assets/scripts/*.min.js',

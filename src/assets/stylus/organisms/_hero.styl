@@ -8,20 +8,24 @@
 
   &-controls
     top 50%
+    z-index 5
     position absolute
     transform translateY(-50%)
 
   &-content
-    width 100%
-    min-height 26vw
     padding 25px 0
 
   &-item
+    display flex
+    min-height 35vw
+    align-items center
+
     background-size cover
     background-position center
     background-repeat no-repeat
 
   &-title
+    margin 0
     font-size 55px
 
   &-text
@@ -41,3 +45,22 @@
     &:hover
       color $color-primary
       background-color transparent
+
+  &-controls
+    width 100%
+    display block
+
+    a
+      size(35px)
+      position absolute
+
+      font-size 25px
+      line-height 35px
+      text-align center
+      color $color-white
+
+    .next
+      right 15px
+
+    .prev
+      left 15px

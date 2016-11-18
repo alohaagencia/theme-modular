@@ -9,6 +9,7 @@
 
 @import 'organisms/_header-superior'
 @import 'organisms/_hero'
+@import 'organisms/_newsletter'
 
 @import 'templates/_header'
 
@@ -17,3 +18,13 @@
 
   +above(1024px)
     padding-top 0
+
+#map
+  width 100%
+  height 100vh
+  display block
+
+  border-bottom 10px solid $color-primary
+
+  +above($screen-sm)
+    height 27vw

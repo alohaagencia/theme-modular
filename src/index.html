@@ -59,7 +59,6 @@
   </header>
 
   <main class="main">
-
     <div class="hero">
       <div class="hero-controls">
         <a href="#" class="prev"><span class="fa fa-chevron-left"></span></a>
@@ -76,14 +75,61 @@
             </figcaption>
           </div><!-- /.container -->
         </figure>
-       </div><!-- /.container -->
-    </div><!-- /.hero -->
 
+        <figure class="hero-item" style="background-image: url('//wallpapers.wallhaven.cc/wallpapers/full/wallhaven-457328.png'); color: #16a">
+          <div class="container">
+            <figcaption class="hero-content text-center">
+              <h2 class="hero-title">Another item in the Hero</h2><!-- /.hero-title -->
+              <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptatibus aspernatur at harum ipsa, minus nam natus voluptate reiciendis labore.</p><!-- /.hero-text -->
+              <a href="#" class="hero-link btn btn-primary">Hero Link</a>
+            </figcaption>
+          </div><!-- /.container -->
+        </figure>
+
+        <figure class="hero-item" style="background-image: url('//wallpapers.wallhaven.cc/wallpapers/full/wallhaven-414348.png'); color: #fff">
+          <div class="container">
+            <figcaption class="hero-content text-right">
+              <h2 class="hero-title">Stranger Hero</h2><!-- /.hero-title -->
+              <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptatibus aspernatur at harum ipsa, minus nam natus voluptate reiciendis labore.</p><!-- /.hero-text -->
+              <a href="#" class="hero-link btn btn-primary">Hero Link</a>
+            </figcaption>
+          </div><!-- /.container -->
+        </figure>
+      </div><!-- /.hero-carousel -->
+    </div><!-- /.hero -->
   </main>
 
+  <section class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="newsletter-label col-sm-7">
+          <h3 class="newsletter-title">
+            Assine e receba tudo o que acontece na Aloha Agência
+          </h3>
+        </div><!-- /.newsletter-label -->
+        <form class="newsletter-form form-inline col-sm-5">
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="E-mail">
+          </div><!-- /.form-group -->
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+
+  <section class="maps" data-address="Rua Hebert Mayer, 812 - Maringá - PR">
+    <div id="map"></div>
+  </section><!-- /.maps -->
+
   <!-- /SCRIPTS -->
-  <script src="assets/scripts/main.min.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBzQFlWJ7WYGNM9Ksvjzm0IZ6ZEDkX8SMA"></script>
   <script src="assets/scripts/vendor.min.js"></script>
+
+  <script src="assets/scripts/modules/hero.min.js"></script>
+  <script src="assets/scripts/modules/gmaps.min.js"></script>
+
+  <script src="assets/scripts/main.min.js"></script>
+  <script src="assets/scripts/home.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
